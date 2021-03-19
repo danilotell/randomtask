@@ -36,6 +36,7 @@
             <div class="card-body">
               <h4 class="card-title">Tasks</h4>
               <div id="task-list" class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Nothing to do...</a>
               </div>
             </div>
           </div>
@@ -46,11 +47,8 @@
             <div class="card-header bg-dark" contenteditable="true">Player 1</div>
             <div class="card-body">
               <h4 class="card-title ">Task</h4>
-              <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+              <div id="task-list-p1" class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Nothing to do...</a>
               </div>
             </div>
           </div>
@@ -60,17 +58,21 @@
             <div class="card-header bg-secondary" contenteditable="true">Player 2</div>
             <div class="card-body">
               <h4 class="card-title">Task</h4>
-              <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+              <div id="task-list-p2" class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Nothing to do...</a>
               </div>
             </div>
           </div>
     </div>
 </div>
+
+<div class="row-md-12 pt-3">
+  <form id="tasks-pick">
+    <button type="submit" class="btn btn-success btn-block">Pick</button>
+  </form>
 </div>
-<script src="App.js"></script>
+
+</div>
+<script src="../src/App.js"></script>
 </body>
 </html>
