@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Task</title>
+    <!-- BOOTSTRAP CDN-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a href="/" class="navbar-brand"> Random Task</a>
+    </nav>
+
+    <!-- CONTAINER-->
+<div class="container">
+    <div id="App" class="row-md-12 pt-3">
+        <form id="tasks-form">
+            <div class="form-row align-items-center">
+              <div class="col-md-10 my-1">
+                <label class="sr-only" for="inlineFormInputTask">Task</label>
+                <input type="text" class="form-control" id="inlineFormInputTask" placeholder="Task Name">
+              </div>
+              <div class="col-md-2">
+                <button type="submit" class="btn btn-primary btn-block">Put</button>
+              </div>
+            </div>
+          </form>
+    </div>
+
+    <div id="all-task-list" class="row-md-12">
+        <div class="card border-light mt-4">
+            <div class="card-header">All Tasks</div>
+            <div class="card-body">
+              <h4 class="card-title">Tasks</h4>
+              <div id="task-list" class="list-group">
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="row pt-2">
+    <div class="col-lg-6">
+        <div class="card border-light mt-4 mb-4">
+            <div class="card-header bg-dark" contenteditable="true">Player 1</div>
+            <div class="card-body">
+              <h4 class="card-title ">Task</h4>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card border-light mt-4 mb-4">
+            <div class="card-header bg-secondary" contenteditable="true">Player 2</div>
+            <div class="card-body">
+              <h4 class="card-title">Task</h4>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+<script src="App.js"></script>
+</body>
+</html>
