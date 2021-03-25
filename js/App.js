@@ -44,12 +44,9 @@ class UI{
         element.setAttribute('class','list-group-item list-group-item-action list-group-item-dark');
         const textnode = document.createTextNode(tareas[rp]);
         element.appendChild(textnode);
+        document.getElementById(rp).remove();
         allTaskList.appendChild(element);
-        try {
-            this.removeTask(rp);
-          } catch (error) {
-            console.error(error);
-          }
+        
         tareas.splice(rp,1);
 
     }
